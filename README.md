@@ -1,3 +1,4 @@
+https://www.ccbp.in/blog/articles/cpp-projects
 A bank management system in C++ is a beginner's project that is great for students. It is made such that it helps users manage their bank accounts. It allows users to create an account, deposit and withdraw money, and check their account details. This project suits students who want to learn basic programming concepts and Object-Oriented Programming (OOPs) in C++ and test their knowledge. It’s a great learning example for handling user input, managing account transactions, and using C++ classes and objects. 
 The main features of the banking application include:
 
