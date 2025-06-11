@@ -66,11 +66,13 @@ int main () {
             std::cin >> account_number;
 
 
-
+            break;
         }
-        // case '4':
-
-        //     break;
+        case '4':
+        {
+            
+            break;
+        }
 
         case '5':
             done = true;
