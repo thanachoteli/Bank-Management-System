@@ -40,17 +40,20 @@ int main () {
         case '2':
         {
             std::cout << "Enter your account number: ";
-            int account_number
+            int account_number;
             std::cin >> account_number;
 
-            for (int i = 0; i < vec.size(); i++)
+            for (auto i = 0; i < vec.size(); i++)
             {
                 if (vec[i].getAccountNumber() == account_number) {
                     std::cout << "Enter your deposit amount: ";
                     float deposit_amount;
                     std::cin >> deposit_amount;
-                    vec[i].deposit(deposit_amount); 
+                    vec[i].deposit(deposit_amount);
+                    break;
                 }
+
+                std::cout << "Error: Bank account can't be found!\n";
             }
             
             break;
@@ -62,7 +65,6 @@ int main () {
             int account_number;
             std::cin >> account_number;
 
-            for 
 
 
         }
