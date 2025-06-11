@@ -55,7 +55,6 @@ int main () {
 
                 std::cout << "Error: Bank account can't be found!\n";
             }
-            
             break;
         }
 
@@ -65,15 +64,43 @@ int main () {
             int account_number;
             std::cin >> account_number;
 
+            for (int i {0}; i < vec.size(); ++i) {
+                if (vec[i].getAccountNumber() == account_number) {
+                    std::cout << "Enter your withdraw amount: ";
+                    float withdraw_amount;
+                    std::cin >> withdraw_amount;
+                    if (vec[i].getBalance() >= withdraw_amount) {
+                        vec[i].withdraw(withdraw_amount);
+                        break;
+                    }
+                    std::cout << "You can't withdraw as there is insufficient balance\n;
+                    break;
+                }
+                std::cout << "Error: Bank account can't be found!\n";
+            }
 
             break;
         }
         case '4':
         {
-            
+            std::cout << "Enter your account number: ";
+            int account_number;
+            std::cin >> account_number;
+
+            for (auto i = 0; i < vec.size(); i++)
+            {
+                if (vec[i].getAccountNumber() == account_number) {
+                    std::cout << "============================\n";
+                    std::cout << "Name: " << vec[i].getName() << "\n";
+                    std::cout << "Account Number: " << vec[i].getAccountNumber() << "\n";
+                    std::cout << "Balance: " << vec[i].getBalance() << "\n";
+                    std::cout << "============================\n";
+                    break;
+                }
+                std::cout << "Error: Bank account can't be found!\n";
+            }
             break;
         }
-
         case '5':
             done = true;
             std::cout << "Quitting...\n";

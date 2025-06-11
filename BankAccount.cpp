@@ -34,3 +34,7 @@ float BankAccount::getBalance () {
 void BankAccount::deposit(float amount) {
     balance += amount;
 }
+
+void BankAccount::withdraw(float amount) {
+    balance -= amount;
+}
